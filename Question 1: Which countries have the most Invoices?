@@ -1,9 +1,0 @@
-
-
-SELECT c.Country, COUNT( i.InvoiceId)AS COUNT_InvoiceId
-FROM Invoice i
-JOIN customer c
-ON c.customerid=i.CustomerId
-GROUP BY 1
-ORDER BY 2 DESC
-; 
